@@ -1,92 +1,38 @@
-# Module_Challenge2_Stock_Market
-BACKGROUND:
+# Stock Market Analysis using VBA
 ![image](https://github.com/SakinaJaffri/Module_Challenge2_Stock_Market/assets/146900226/8d518f95-0d74-478b-be97-34baae38fb60)
 
+## Project Overview
+This project utilizes VBA scripting to analyze stock market data for multiple years. The script loops through all the stocks for a given year, performing calculations on yearly change, percentage change, and total stock volume, while identifying the stocks with the greatest increase, decrease, and volume.
 
-In this assignment, we used VBA scripting to analyze generated stock market data.
+## Features
+- **Ticker Symbol**: Extracts and displays the stock ticker symbol.
+- **Yearly Change**: Calculates the yearly change in stock price from the opening to the closing of the year.
+- **Percentage Change**: Calculates the percentage change in stock price from the opening to the closing of the year.
+- **Total Stock Volume**: Sums the total volume of stocks traded during the year.
+- **Greatest Values**: Identifies the stock with:
+  - Greatest % increase
+  - Greatest % decrease
+  - Greatest total volume
 
-Created a script that loops through all the stocks for one year and outputs the following information:
+## Code Summary
+- **Column Creation**: Ticker, Yearly Change, Percent Change, and Total Stock Volume.
+- **Calculated Values**: Greatest % increase, Greatest % decrease, and Greatest Total Volume.
+- **Looping Function**: VBA script loops across all worksheets (years) in the workbook, analyzing each year's data.
+- **Conditional Formatting**: Applied to the Yearly Change and Percent Change columns to visually differentiate performance.
+- **Max/Min Calculation**: Populates and highlights the maximum and minimum values for percentage changes and total volume.
+- **Color Indexing**: Applied to cells based on performance metrics (e.g., positive/negative changes).
 
-•	The ticker symbol
+## VBA Script Highlights
+- Loops through stock data for each year.
+- Assigns calculated values to new columns.
+- Runs on all sheets at once using `For Each ws In Worksheets`.
 
-•	Yearly change from the opening price at the beginning of a given year to the closing price at the end of that year.
+## Screenshots
+The repository includes screenshots for the stock data from 2018, 2019, and 2020 for better understanding of the VBA script's output.
 
-•	The percentage change from the opening price at the beginning of a given year to the closing price at the end of that year.
+## Tools Used
+- Microsoft Excel
+- VBA (Visual Basic for Applications)
 
-•	The total stock volume of the stock.
-
-•	Added functionality to the script to return the stock with the "Greatest % increase", "Greatest % decrease", and "Greatest total volume"
-
-•	Made appropriate adjustments to VBA script to enable it to run on every worksheet (that is, every year) at once.
-
-
-
-
-
-Stock Market Analysis Code/Script (via these indictors):
-
-Retrieval of Data
-
-•	The script loops through one year of stock data and reads/ stores all of the following values from each row:
-
-o	ticker symbol
-
-o	volume of stock 
-
-o	open price 
-
-o	close price 
-
-Column Creation
-
-•	On the same worksheet as the raw data, or on a new worksheet all columns were correctly created for:
-
-o	ticker symbol 
-
-o	total stock volume 
-
-o	yearly change ($) 
-
-o	percent change 
-
-Conditional Formatting 
-
-•	Conditional formatting is applied correctly and appropriately to the yearly change column 
-
-•	Conditional formatting is applied correctly and appropriately to the percent change column 
-
-Calculated Values 
-
-•	All three of the following values are calculated correctly and displayed in the output:
-
-o	Greatest % Increase
-
-o	Greatest % Decrease
-
-o	Greatest Total Volume 
-
-Looping Across Worksheet
-
-•	The VBA script can run on all sheets successfully.
-
-
-
-
-Code Summary:
-
-Created Ticker, Yearly Change, Percent Change & Total Stock Volume (Columns)
-
-Assigned the Ticker, Value (columns) & Greatest % increase, Greatest % decrease, Greatest Total volume (values in the columns), respectively!
-
-Looping function & Vlookup function performed to populate the Ticker, Yearly change, Percent Change & Total Stock Volume respectively!
-
-Color Index in the respective columns!
-
-Populated and matched the Max, Min and Total volume (values) in the respective columns!
-
-Made appropriate adjustments to VBA script to enable it to run on every worksheet (that is, every year) at once through "For Each ws. In Worksheets"
-
-
-
-Note: please find the attached 3 screenshots of Excel Sheets (2018,2019 & 2020) in the respository for better understanding dataset scripted through using VBA. 
-
+## Contributors
+- **Sakina Jaffri** - VBA scripting, data analysis, and report creation.
